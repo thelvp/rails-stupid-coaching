@@ -13,3 +13,32 @@
  *= require_tree .
  *= require_self
  */
+
+ @import url('https://use.fontawesome.com/releases/v6.1.2/css/all.css');
+
+ /* Footer / socials list  */
+
+.footer {
+  text-align: center;
+  background-color: black;
+  opacity: 0.8;
+  padding: 20px 0;
+}
+
+.list-inline {
+  margin: 0 auto;
+}
+
+.list-inline > li {
+  display: inline-block;
+  padding: 0px 10px;
+}
+
+.fa-brands {
+  font-size: 30px;
+  color: #bec2c5;
+}
+
+.fa-brands:hover {
+  color: #0d6efd;
+}
