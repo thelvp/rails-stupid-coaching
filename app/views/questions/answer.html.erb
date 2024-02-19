@@ -1,11 +1,21 @@
-<h2>Ask a question to the coach</h2>
+<div class="container">
+  <h3>💭 Your question was...</h3>
+  <div class="border-start border-5 ps-3">
+    <div class="blockquote my-2"><em>
+      <%= @userinput %>
+    </em></div>
+    <div class="blockquote-footer my-2">You</div>
+  </div>
+</div>
 
-<h3>Your question was...</h3>
-<%# # Todo: embed code to reiterate question here %>
-<%= @userinput %>
+<div class="container mt-5">
+  <h3>💬 The advice you need:</h3>
+  <div class="border-start border-5 ps-3">
+    <div class="blockquote my-2"><em><%= @answer %></em></div>
+    <div class="blockquote-footer my-2">Your Coach</div>
+  </div>
+</div>
 
-<h3>The advice you need:</h3>
-<%= @answer %>
-<%# Todo: add advice of coach %>
-
-<p> <%= link_to("Ask a new question", ask_path) %> </p>
+<div class="container mt-5">
+  <p> <%= link_to("Ask a new question", ask_path) %> </p>
+</div>

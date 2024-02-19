@@ -8,13 +8,13 @@ class QuestionsController < ApplicationController
     # 1. Conditional; which advise?
     if @userinput == "i am going to work"
       # return "Great!" => make variable @answer with value output HTML (@ with answer to make it accessible for view)
-      @answer = "Great! - xoxo your coach"
+      @answer = "Great!"
     elsif @userinput.end_with?("?")
       # return: "Silly question, get dressed and go to work!"
-      @answer = "Silly question, get dressed and go to work! - xoxo your coach"
+      @answer = "Silly question, get dressed and go to work!"
     else
       # return: "I don't care, get dressed and go to work!"
-      @answer = "I don't care, get dressed and go to work! - xoxo your coach"
+      @answer = "I don't care, get dressed and go to work!"
     end
   end
 end
