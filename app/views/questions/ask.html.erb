@@ -1,0 +1,16 @@
+<h2>Stupid Coaching</h2>
+
+<h3>Use the form below to ask your coach for advise! ⬇️</h3>
+<%# add /answer as redirect link %>
+<form action="/answer" method="get">
+  <label for="ask">Enter your question:</label>
+  <%# Look out: name is key! %>
+  <input
+    name="question"
+    type="text"
+    id="ask"
+    placeholder="how do I bake cookies?"
+    value=""
+  >
+  <input type="submit">
+</form>
